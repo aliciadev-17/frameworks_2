@@ -6,7 +6,7 @@ import { NgFor, NgIf } from '@angular/common';
   templateUrl: './servicios.component.html',
   styleUrls: ['./servicios.component.css'],
   standalone: true,
-  imports: [NgFor, NgIf]
+  imports: [NgFor]
 })
 export class ServiciosComponent implements OnInit {
   servicios: any[] = [];
