@@ -1,0 +1,9 @@
+<h2>Nuestros Servicios</h2>
+<div style="display: flex; gap: 20px;">
+  <div class= "card" *ngFor="let servicio of servicios" style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; width: 200px;">
+    <div style="font-size: 2rem;">{{ servicio.icono }}</div>
+    <h3>{{ servicio.nombre }}</h3>
+    <p>{{ servicio.descripcion }}</p>
+    <button (click)="alerta(servicio.nombre)">¡Más info!</button>
+  </div>
+</div>

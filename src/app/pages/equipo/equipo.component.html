@@ -1,0 +1,8 @@
+<h2>Equipo</h2>
+<div style="display: flex; gap: 20px;">
+  <div  class= "card" *ngFor="let miembro of miembros" style="border: 1px solid #aaa; border-radius: 8px; padding: 16px; width: 200px; text-align: center;">
+    <img [src]="miembro.foto" [alt]="miembro.nombre" width="80" style="border-radius: 50%;" />
+    <h3>{{ miembro.nombre }}</h3>
+    <p>{{ miembro.puesto }}</p>
+  </div>
+</div>

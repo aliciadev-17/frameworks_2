@@ -1,0 +1,19 @@
+<h2>Contacto</h2>
+<form (ngSubmit)="enviar()">
+  <label>
+    Nombre:<br />
+    <input type="text" [(ngModel)]="nombre" name="nombre" required />
+  </label>
+  <br /><br />
+  <label>
+    Email:<br />
+    <input type="email" [(ngModel)]="email" name="email" required />
+  </label>
+  <br /><br />
+  <label>
+    Mensaje:<br />
+    <textarea [(ngModel)]="mensaje" name="mensaje" rows="4"></textarea>
+  </label>
+  <br /><br />
+  <button type="submit">Enviar</button>
+</form>
