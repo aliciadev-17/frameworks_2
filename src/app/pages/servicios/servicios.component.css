@@ -1,17 +1,22 @@
 .cards {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
 }
+
 .card {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   padding: 18px 12px;
-  width: 210px;
+  width: 280px;
   text-align: center;
   transition: box-shadow 0.2s;
+  margin-bottom: 24px;
 }
+
 .card:hover {
   box-shadow: 0 4px 14px rgba(0,188,212,0.11);
 }
